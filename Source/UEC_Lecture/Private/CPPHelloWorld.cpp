@@ -29,8 +29,7 @@ void ACPPHelloWorld::BeginPlay()
 	UE_LOG(LogTemp, Error, TEXT("Error Message"));
 
 	// Viewport‚Ì¶ã‚É•¶Žš—ñ‚ðo—Í‚·‚éŠÖ”
-	GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::White, "C++ Hello World!", true, FVector2D(2.0f, 2.0f));
-
+	GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Cyan, "C++ Hello World!", true, FVector2D(2.0f, 2.0f));
 }
 
 // Called every frame
