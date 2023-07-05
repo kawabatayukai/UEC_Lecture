@@ -28,10 +28,12 @@ public:
 	UPROPERTY(EditAnywhere)
 		UStaticMeshComponent* StaticMesh;
 
-	// 親クラスのメンバ関数 
-	void CallParentFunc();
+	// 親クラスのメンバ関数   UFUNCTION(ue4側からアクセスできる)
+	UFUNCTION(BlueprintCallable, Category = CPP_And_Blueprint)
+		void CallParentFunc();
 
 	// 親クラスのデータメンバ
-	int VarParentNum = 10;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Default)
+		int VarParentNum = 10;
 
 };
